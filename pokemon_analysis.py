@@ -13,6 +13,7 @@ def usage_dataframe():
 
     len_txt = int(len(data)/9)+1 # length of data divided by 9 for iteration
     temp_dex = []
+    
 
     for i in range(1,len_txt):
         num = 9*i
