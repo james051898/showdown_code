@@ -1,6 +1,9 @@
+# This program is going to be a pokemon object that returns all relevant probabilities needed for each states
+
 import re
 import pokemon_analysis as poke
 import numpy as np
+
 def get_ability(string):
     new_string = string.split('|')
     abilities = []
@@ -56,6 +59,7 @@ def get_spread(string):
     return string
 
 def pokemon(pokemon):
+# This is supposed to be an object that represents a pokemon (In development)
     def type():
         type1 = 'type1'
         type = [type1]
@@ -64,7 +68,7 @@ def pokemon(pokemon):
             type.append(type2) # there are pokemon with composite types
         return type
     def ability(pokemon):
-        ability(string)
+        ability(pokemon)
     def spread():
         spread = {'atk': 252, 'def' : 252, 'spatk' : 252, 'spdef' : 252, 'spd' : 252} # dictionary of always five elements; each element is a string with a number between 0 & 252
         return spread
