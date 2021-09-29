@@ -5,6 +5,8 @@ import pokemon_analysis as poke
 import numpy as np
 
 def get_ability(string):
+# This file needs to be refactored and reorganized desperately
+# Fortunately, it works, but I have no idea how anymore
     new_string = string.split('|')
     abilities = []
     substring = "%"
@@ -76,8 +78,8 @@ def pokemon(pokemon):
         nature = [] # this needs to be key value pairs where the key is a string and the value is a probability
         return nature
     def checks():
-        checks = [] # list of strings
+        checks = [] # key value pairs
         return checks
     def counters():
-        counters = [] # list of strings
+        counters = [] # key value pairs
         return checks
