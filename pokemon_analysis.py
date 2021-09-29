@@ -1,6 +1,8 @@
 from numpy import empty
 import pandas as pd
 import re
+# This program is used to parse the pokedex.txt file and the gen8ou-1825.txt file. 
+# From there it adds them to more organized DataFrames
 
 def usage_dataframe():
     # File path for usage stats
@@ -22,7 +24,7 @@ def usage_dataframe():
     dex = pd.DataFrame(temp_dex)
     indx = p_reindex(dex)
     dex = pd.DataFrame(temp_dex, index=indx)
-    dex = dex.iloc[:,2:]
+    dex = dex.iloc[:,2:] # indexing pokemon
     dex = rename_columns(dex)
     return dex
 
